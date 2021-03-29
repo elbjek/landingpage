@@ -1,0 +1,46 @@
+.mong--hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding-top: 6em;
+  .container:not(.modal.container) {
+    margin: 4.5em 0em 6.6em 0em;
+  }
+  h1,
+  h2 {
+    font-family: 'Modern Regular', serif;
+    user-select: none
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin: 0.15em auto 0.1em auto;
+    max-width: 70%;
+    color: gold;
+  }
+
+  p {
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: 1em;
+    user-select: none
+  }
+  button {
+    color: $white;
+    text-transform: uppercase;
+    padding: 0.7rem 1.7rem;
+    border: 2px solid gold;
+    border-radius: 0px;
+    font-weight: bold;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    &:hover {
+      transition: 0.2s ease;
+      color: $white;
+      background-color: gold;
+    }
+  }
+}
