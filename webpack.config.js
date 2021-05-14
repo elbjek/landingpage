@@ -124,7 +124,7 @@ module.exports = (env, options) => ({
     new HtmlWebpackPlugin({
       template: './src/index.pug',
       filename: './index.html',
-      title: 'MONG Studio',
+      title: 'Template Repo',
       scriptLoading: 'defer',
     }),
     new HtmlWebpackPugPlugin({

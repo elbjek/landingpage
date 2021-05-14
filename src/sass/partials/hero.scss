@@ -18,7 +18,7 @@
     font-size: 3.5em;
     margin: 0.15em auto 0.1em auto;
     max-width: 70%;
-    color: gold;
+    color: $orange;
   }
 
   p {
@@ -29,10 +29,10 @@
     user-select: none
   }
   button {
-    color: $white;
+    color: $black;
     text-transform: uppercase;
     padding: 0.7rem 1.7rem;
-    border: 2px solid gold;
+    border: 2px solid $orange;
     border-radius: 0px;
     font-weight: bold;
     margin-top: 1rem;
@@ -40,7 +40,7 @@
     &:hover {
       transition: 0.2s ease;
       color: $white;
-      background-color: gold;
+      background-color: $orange;
     }
   }
 }

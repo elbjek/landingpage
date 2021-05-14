@@ -7,7 +7,7 @@
     z-index: 2;
   }
   .footer--section-top {
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid $orange;
     align-items: center;
     justify-content: space-between;
     padding: 2.3em 0em 2em 0em;
@@ -59,7 +59,7 @@
             margin-right: 10px;
             padding: 18px 21px;
             border-radius: 50%;
-            background-color: gold;
+            background-color: $orange;
         }
       }
     }
@@ -67,10 +67,10 @@
   .footer--section-bottom {
     padding: 2.1em 0;
     i {
-      color: gold;
+      color: $orange;
       font-size: 1em;
       &:hover {
-        color: gold;
+        color: $orange;
       }
     }
     p {
