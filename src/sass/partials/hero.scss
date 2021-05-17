@@ -10,7 +10,7 @@
   }
   h1,
   h2 {
-    font-family: 'Modern Regular', serif;
+    font-family: 'DM Serif Display', serif;
     user-select: none
   }
 
@@ -18,29 +18,29 @@
     font-size: 3.5em;
     margin: 0.15em auto 0.1em auto;
     max-width: 70%;
-    color: $orange;
+    color: orange;
   }
 
   p {
-    color: $white;
+    color: white;
     font-size: 1.4rem;
-    font-weight: normal;
+    // font-weight: normal;
     margin-top: 1em;
     user-select: none
   }
   button {
-    color: $black;
+    color: black;
     text-transform: uppercase;
     padding: 0.7rem 1.7rem;
-    border: 2px solid $orange;
+    border: 2px solid orange;
     border-radius: 0px;
-    font-weight: bold;
+    // font-weight: bold;
     margin-top: 1rem;
     letter-spacing: 2px;
     &:hover {
       transition: 0.2s ease;
-      color: $white;
-      background-color: $orange;
+      color: white;
+      background-color: orange;
     }
   }
 }
