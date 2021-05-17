@@ -28,3 +28,4 @@ Users should be able to:
 [ ] Mobile styling
 [ ] Add icons
 [ ] Meaningful animations
+[ ] Add open/close nav x button

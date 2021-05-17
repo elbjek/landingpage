@@ -1,8 +1,10 @@
-@import '~bootstrap/dist/css/bootstrap-grid.min.css';
+@import '~bootstrap/';
 @import '_fonts';
 @import '_variables';
 @import 'global';
 @import 'media';
+
+@import './partials/navigation';
 @import './partials/hero';
- 
 @import './partials/footer';
+

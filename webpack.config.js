@@ -6,16 +6,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
-const globSync = require('glob').sync;
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 var HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 module.exports = (env, options) => ({
   entry: ['./src/index.js'],
-  devServer: {
-    host: '0.0.0.0', //your ip address
-    port: 8080,
-    disableHostCheck: true,
-  },
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
@@ -25,16 +19,11 @@ module.exports = (env, options) => ({
   module: {
     rules: [
       {
-        test: /\.(jpg|png|gif|svg)$/,
-        loader: 'image-webpack-loader',
-        enforce: 'pre',
-      },
-      {
         test: /\.(sa|sc|c)ss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(svg|png|jpg|jpeg|gif)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -56,7 +45,7 @@ module.exports = (env, options) => ({
         },
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(woff(2)?|ttf|eot|gif)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
             loader: 'file-loader',
@@ -114,13 +103,6 @@ module.exports = (env, options) => ({
       chunkFilename: '[id].css',
     }),
     new CleanWebpackPlugin(),
-    // ...globSync('src/**/*.html').map((fileName) => {
-    //   return new HtmlWebpackPlugin({
-    //     template: fileName,
-    //     inject: true,
-    //     filename: fileName.replace('src/', ''),
-    //   });
-    // }),
     new HtmlWebpackPlugin({
       template: './src/index.pug',
       filename: './index.html',
@@ -143,9 +125,6 @@ module.exports = (env, options) => ({
   optimization: {
     minimize: true,
     runtimeChunk: 'single',
-    // splitChunks: {
-    //   chunks: 'all',
-    // },
     minimizer: [
       new TerserPlugin(),
       new CompressionPlugin({

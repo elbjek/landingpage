@@ -2,15 +2,16 @@
   box-sizing: border-box;
 }
 body {
-  background: $black;
+  background: $background-color-light;
   margin: 0;
   padding: 0;
-  color: $white;
+  color: $text-color-dark;
 }
 
 body,
 html {
-  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
 }
 
 ul {
@@ -18,5 +19,34 @@ ul {
   padding: 0;
   li {
     list-style-type: none;
+  }
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.logo {
+  background-image: url(../assets/images/logo.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 100px;
+}
+
+.btn-cta {
+  padding: 0.5rem 2rem;
+  border-width: 2px;
+  border-style: solid;
+  text-transform:uppercase
+}
+.btn-cta-violet {
+  border-color: $border-color-medium;
+  color: $text-color-medium;
+  &:hover {
+    background-color: $button-color-medium--hover;
+    color: $text-color-white;
+    text-decoration: none;
   }
 }
