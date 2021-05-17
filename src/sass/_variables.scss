@@ -1,17 +1,27 @@
-$medium-white: #f7f7f7;
-$white: #ffffff;
-// accent colors
-$orange: #f7b74f;
-$lightblue: #87c5ec;
-$darkblue: #4a79bc;
+// Primary
+$dark-gray: #95A9C6;
+$medium-violet: #2D2640;
+// Neutral
+$dark-violet: #2B272F;
+$light-violet: #837D87;
+$light-gray:#FAFAFA;
 
+$heading-color-white:$light-gray;
+$heading-color-medium:$medium-violet;
+$heading-color-dark:$dark-violet;
 
-$lightpurple: #934bff;
-$darkpurple:#5f3afc;
+$text-color-white:$light-gray;
+$text-color-violet:$medium-violet;
+$text-color-dark-violet: $dark-violet;
 
-$button-purple:#663cfc;
-// basic colors
+$background-color-dark:$dark-violet;
+$background-color-medium:$medium-violet;
+$background-color-light:$light-gray;
 
-$black: #272727;
-$medium-gray: #323232;
-$light-gray: #575756;
+$button-color-white:$light-gray;
+$button-color-medium:$medium-violet;
+$button-color-dark:$dark-violet;
+
+$button-color-white--hover:$light-gray;
+$button-color-medium--hover:$medium-violet;
+$button-color-dark--hover:$dark-violet;
