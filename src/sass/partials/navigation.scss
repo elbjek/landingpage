@@ -3,14 +3,39 @@
     position: relative;
     z-index: 1;
     padding: 5px 0px;
+    @media screen and (max-width:992px) {
+        padding: 0;
+    }
+    .container {
+        @media screen and (max-width:992px) {
+            padding: 0;
+        }
+    }
+    .navbar-brand {
+        @media screen and (max-width:992px) {
+            margin-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
     .navbar {
         background-color: $background-color-white;
         padding: 0px;
-    
+        .navbar-toggler {
+            border: none;
+            .navbar-toggler-icon {
+                background-image: url(../assets/images/icon-hamburger.svg);
+            }
+            .navbar-toggler-icon-close {
+                background-image:  url(../assets/images/icon-close.svg);
+            }
+        }
         .navbar-collapse {
+            
             @media screen and (max-width:992px) {
                 background-color: $background-color-dark;
-            }
+             }
+
             ul {
                 @media screen and (max-width:992px) {
                     padding:0px 15px 15px;
