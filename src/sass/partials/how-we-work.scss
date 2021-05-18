@@ -1,0 +1,33 @@
+.newsletter {
+    .newsletter-content {
+        background-color: $background-color-medium;
+        min-height: 255px;
+        color: $heading-color-white;
+        padding: 4.375rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(../assets/images/bg-pattern-how-we-work-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        @media screen and (max-width:992px) {
+            flex-direction: column;
+            text-align: center;
+            background-image: url(../assets/images/bg-pattern-how-we-work-mobile.svg);
+        }
+        h4 {
+            font-size: 3.1875rem;
+            line-height: 55px;
+            @media screen and (max-width:992px) {
+                margin-bottom: 2rem;
+            }
+        }
+        .btn-cta-white {
+            background-color: transparent;
+            &:hover{
+                background-color: $button-color-white--hover;
+            }
+        }
+    }
+}
