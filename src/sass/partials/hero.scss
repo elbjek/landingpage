@@ -67,6 +67,8 @@
     .row {
       @media screen and (max-width:992px) {
         padding: 0px 15px;
+        margin-left: 0px;
+        margin-right: 0px;
       }
     }
     hr {
@@ -74,19 +76,15 @@
         display: none;
       }
     }
-    h1,
-    h2 {
-      font-family: 'DM Serif Display', serif;
-      user-select: none;
-    }
     
     h1 {
       font-size: 4.445rem;
-      margin: 4rem auto .1em;
+      margin: 3rem auto .1em;
       color: $heading-color-white;
       line-height: 70px;
       @media screen and (max-width:992px) {
         font-size: 3.7rem;
+        margin-top: 5rem;
       }
     }
     p {

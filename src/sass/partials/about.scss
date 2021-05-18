@@ -1,0 +1,40 @@
+.about {
+    margin-top: 18rem;
+    @media screen and (max-width:992px) {
+        text-align: center;
+        margin-top: 8rem;
+    }
+
+    h2 {
+        font-size: 4.375rem;
+        margin-bottom: 5.5rem;
+        @media screen and (max-width:992px) {
+            margin-bottom: 3rem;
+            margin-top: 2rem;
+        }
+    }
+    .icon {
+        height: 100px;
+        background-repeat: no-repeat;
+        width: 100px;
+        background-position: left center;
+        margin-bottom: 2rem;
+        @media screen and (max-width:992px) {
+            margin:0 auto 2rem auto;
+        }
+    }
+    .icon-snappy-process {
+        background-image: url(../assets/images/icon-snappy-process.svg);
+    }
+    .icon-affordable-prices {
+        background-image: url(../assets/images/icon-affordable-prices.svg);
+    }
+    .icon-people-first {
+        background-image: url(../assets/images/icon-people-first.svg);
+    }
+    p {
+        @media screen and (max-width:992px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
