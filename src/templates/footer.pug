@@ -1,37 +1,55 @@
-footer#footer.footer--section
-  .container.body--border
-    .row.body--lines
-      .col-sm-4
-      .col-sm-4.body--border
-      .col-sm-4
-    .row.footer--section-top
-      .mongo--logo.mongo--logo-footer.col-sm-12.col-md-12.col-lg-2.col-xl-4
-        //- img(src='./assets/images/mong-logo-icon.png' alt='mong-studio')
-        span.logo--text Template
-      .footer--section-info.col-sm-12.col-md-12.col-lg-10.col-xl-8
-        .row
-          p
-            span.gold--block
-              i.fas.fa-map-marker-alt
-            | 11000, BELGRADE, SERBIA
-          p
-            span.gold--block
-              i.far.fa-envelope
-            | office@mong.rs
-          p
-            span.gold--block
-              i.fas.fa-phone
-            | +381.62.582.652
-    .row.footer--section-bottom
-      .socialmedia--section
-        a(href='#')
-          i.fab.fa-facebook-square
-        a(href='#')
-          i.fab.fa-linkedin
-        a(href='#')
-          i.fab.fa-instagram
-      p.copyright
-        | Copyrights @ Template Repo | 
-        script.
-          document.write(new Date().getFullYear())
-        | All rights reserved
+footer.footer 
+	.container 
+		.footer-top 
+			a.logo(href="/")
+			ul 
+				li
+					a.icon.icon-facebook(href="/") 
+				li
+					a.icon.icon-twitter(href="/") 
+				li
+					a.icon.icon-pinterest(href="/") 
+				li
+					a.icon.icon-instagram(href="/")
+		.footer-bottom
+			.row 
+				.col-sm-12.col-lg-3 
+					p Our Company 
+					ul 
+						li 
+							a(href="/") How we work 
+						li 
+							a(href="/") Why insure? 
+						li 
+							a(href="/") View plans 
+						li 
+							a(href="/") Reviews
+				.col-sm-12.col-lg-3 
+					p Help me 
+					ul 
+						li 
+							a(href="/") FAQ 
+						li 
+							a(href="/") Terms of use 
+						li 
+							a(href="/") Privacy policy 
+						li 
+							a(href="/") Cookies 
+				.col-sm-12.col-lg-3 
+					p Contract 
+					ul 
+						li 
+							a(href="/") Sales
+						li 
+							a(href="/") Support 
+						li 
+							a(href="/") Live chat 
+				.col-sm-12.col-lg-3 
+					p Others 
+					ul 
+						li 
+							a(href="/") Careers
+						li 
+							a(href="/") Press 
+						li 
+							a(href="/") Licenses   
