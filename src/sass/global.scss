@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background: $background-color-light;
+  background: $background-color-white;
   margin: 0;
   padding: 0;
   color: $text-color-dark;
@@ -39,8 +39,10 @@ a {
   padding: 0.5rem 2rem;
   border-width: 2px;
   border-style: solid;
-  text-transform:uppercase
+  text-transform:uppercase;
+  transition: .2s ease;
 }
+
 .btn-cta-violet {
   border-color: $border-color-medium;
   color: $text-color-medium;
@@ -49,4 +51,27 @@ a {
     color: $text-color-white;
     text-decoration: none;
   }
+}
+
+.btn-cta-white {
+  border-color: $border-color-white;
+  color: $text-color-white;
+  background-color: $background-color-medium;
+  &:hover {
+    background-color: $button-color-white--hover;
+    color: $text-color-dark;
+    text-decoration: none;
+  }
+}
+
+hr {
+  height: 2px;
+  width: 30%;
+  background-color: $background-color-light;
+  margin-left: 0;
+  margin-bottom: 3rem;
+  @media screen and (max-width:992px) {
+    margin-left: auto;
+    margin-bottom: 1rem;
+  } 
 }

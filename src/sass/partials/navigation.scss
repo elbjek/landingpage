@@ -1,50 +1,56 @@
-.navbar {
-    background-color: $background-color-light;
-    padding: 0px;
-
-    .navbar-collapse {
-        @media screen and (max-width:992px) {
-            background-color: $background-color-dark;
-        }
-        ul {
+.navigation {
+    background-color: $background-color-white;
+    position: relative;
+    z-index: 1;
+    padding: 5px 0px;
+    .navbar {
+        background-color: $background-color-white;
+        padding: 0px;
+    
+        .navbar-collapse {
             @media screen and (max-width:992px) {
-                padding:0px 15px 15px;
+                background-color: $background-color-dark;
             }
-            .nav-item {
+            ul {
                 @media screen and (max-width:992px) {
-                    &:last-of-type {
-                        width: 100%;
-                        text-align: center;
-                    }
+                    padding:0px 15px 15px;
                 }
-                .nav-link {
-                    color: $text-color-light;
-                    text-transform: uppercase;
-                    padding-top: 1.5rem;
-                    padding-bottom: 1.5rem;
-                    &:hover {
-                        color: $text-color-dark;
-                    }
-                    &.active {
-                        color: $text-color-dark;
-                    }
-                    @media (min-width: 992px) {
-                        padding-left: 1rem !important;
-                        padding-right: 1rem;
-                    }
+                .nav-item {
                     @media screen and (max-width:992px) {
-                        color: $text-color-white;
+                        &:last-of-type {
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
-                }
-                .btn-cta {
-                    @media screen and (max-width:992px) {
-                        color: $text-color-white;
-                        border-color: $border-color-white;
+                    .nav-link {
+                        color: $text-color-light;
+                        text-transform: uppercase;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        &:hover {
+                            color: $text-color-dark;
+                        }
+                        &.active {
+                            color: $text-color-dark;
+                        }
+                        @media (min-width: 992px) {
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                        }
+                        @media screen and (max-width:992px) {
+                            color: $text-color-white;
+                        }
                     }
-                }    
-        
-                .nav-link,.btn-cta {
-                    font-size: 0.938rem;
+                    .btn-cta {
+                        @media screen and (max-width:992px) {
+                            color: $text-color-white;
+                            border-color: $border-color-white;
+                        }
+                    }    
+            
+                    .nav-link,.btn-cta {
+                        font-size: 0.938rem;
+                    }
                 }
             }
         }
