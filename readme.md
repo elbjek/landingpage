@@ -18,14 +18,3 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-
-### Personal tasks
-
-[ ] Add global css variables
-[ ] Create desktop structure
-[ ] Create desktop styling
-[ ] Responsive mobile
-[ ] Mobile styling
-[ ] Add icons
-[ ] Meaningful animations
-[ ] Add open/close nav x button
